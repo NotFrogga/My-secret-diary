@@ -1,13 +1,19 @@
 <?php
-	include 'databaseinfo.php';
-	session_start();
-	autoLogin();
+	
+//Tableau $database contient information DB
+include 'databaseinfo.php';
+	
+//Session start et Auto Login
+session_start();
+autoLogin();
+
 
  $DB_HOST = '$databse["DB_HOST"]';
  $DB_USERNAME = '$databse["DB_USERNAME"]';
  $DB_PASSWORD = '$databse["DB_PASSWORD"]';
  $DB_NAME = '$databse["DB_NAME"]';
-	
+
+//Connexion database MySQL
 	$link=mysqli_connect($DB_HOST, $DB_USERNAME, $DB_PASSWORD, $DB_NAME);
 	if (mysqli_connect_errno()) {
 		
