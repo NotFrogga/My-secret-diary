@@ -1,9 +1,12 @@
 <?php
+	include 'databaseinfo.php';
 	session_start();
-	$DB_HOST = 'lehichcodmfrogga.mysql.db';
-	$DB_USERNAME = 'lehichcodmfrogga';
-	$DB_PASSWORD = 'EoZcYG7yhhiG8EHakPPz';
-	$DB_NAME = 'lehichcodmfrogga';
+
+ $DB_HOST = '$databse["DB_HOST"]';
+ $DB_USERNAME = '$databse["DB_USERNAME"]';
+ $DB_PASSWORD = '$databse["DB_PASSWORD"]';
+ $DB_NAME = '$databse["DB_NAME"]';
+
 	 
 	$link=mysqli_connect($DB_HOST, $DB_USERNAME, $DB_PASSWORD, $DB_NAME);
 	if (mysqli_connect_errno()) {
