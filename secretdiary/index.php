@@ -32,7 +32,7 @@ autoLogin();
 	}
 	
 	function keepLoggedIn($id) {
-		$link=mysqli_connect("shareddb-j.hosting.stackcp.net","database-mysql-3935c87d","abcabcokdzao.@","database-mysql-3935c87d");
+		$link=mysqli_connect($DB_HOST, $DB_USERNAME, $DB_PASSWORD, $DB_NAME);
 
 		if (isset($_POST["stay-loggedin"])) {
 					
