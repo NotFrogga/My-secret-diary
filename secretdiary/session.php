@@ -194,42 +194,13 @@
 				type	: 'post',
 				url		: URL,
 				data 	: {textDiary : textDiary},
-				success : function(response) {
-					
-					console.log(response);
-					
-				}
-				
 			});
 			
 			
 		});
 	
 	
-		//Si cookie existe
-			// <?php
-			// if(isset($_COOKIE["customerId"])) {
-				
-				
-			// $update = "UPDATE `Users` SET `diary`='".mysqli_real_escape_string($link,$_POST['textDiary'])."' WHERE `cookie`='".mysqli_real_escape_string($link,$_COOKIE['customerId'])."' LIMIT 1";
-				
-				// mysqli_query($link,$update);
-				
-				
-				
-			// } 
-			
-			// Si connexion via email
-			
-			// else {
 		
-				// $update = "UPDATE `Users` SET `diary`='".mysqli_real_escape_string($link,$_POST['textDiary'])."' WHERE `email`='".mysqli_real_escape_string($link,$_SESSION['post_data'])."' LIMIT 1";
-				
-				// mysqli_query($link,$update);
-				
-				
-			// }
-			// ?>
 	
 	</script>
   
