@@ -19,16 +19,8 @@
 	
 	getAccount();
 	
+	// Message introduction utilisateur
 	$message="";
-	
-	
-	
-	
-		
-
-	
-	
-	
 	
 	
 	function getAccount() {
